@@ -32,6 +32,13 @@ on the calendar for the next two weeks (earnings, product events, Fed decisions,
 6. Weekly change is computed by the page from the closes in `BRIEF`; never type a percentage.
 7. The page must work on a phone (readable at 380px, no horizontal scroll, tap targets at
    least 44px) and print on one or two pages as a clean brief.
+8. Links count as tap targets: every link needs at least 44px of height (padding or
+   `min-height`), not only buttons and rows.
+9. Refresh timing: if a refresh runs while the market is open, either record the last
+   completed close and say so in the changelog, or record intraday prices as `latest`.
+   Pick one and state which in the changelog entry.
+10. A weekly move of 5% or more (up or down) must be confirmed against a second price source
+    before it goes in. If it cannot be confirmed, say so in the changelog entry.
 
 ## How work is done here
 
@@ -42,5 +49,9 @@ on the calendar for the next two weeks (earnings, product events, Fed decisions,
 - **Before finishing any task**, run the `qa-reviewer` agent on `index.html` and fix what it
   reports. If an agent cannot launch another agent, the main session runs `qa-reviewer`
   after that agent returns.
+- **Checking prices**: use the `price-checker` agent to cross-check closes in `BRIEF` against
+  a second source. It reports only.
+- **Before committing**: use the `diff-summarizer` agent to get a plain-English summary of
+  what changed. It reports only.
 - The owner publishes. Claude edits files; the owner commits and syncs from VS Code after
   reading the diff.

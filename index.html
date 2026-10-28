@@ -180,94 +180,102 @@ const WATCHLIST = {
 };
 
 const BRIEF = {
-  mode: "sample",
-  asOf: "2026-10-16",
-  retrievedAt: "2026-10-16T16:30:00-04:00",
+  mode: "live",
+  asOf: "2026-10-27",
+  retrievedAt: "2026-10-28T11:45:00-04:00",
   priceType: "close",
   companies: {
     NVDA: {
       closes: [
-        { date: "2026-10-12", close: 100.00 },
-        { date: "2026-10-13", close: 101.40 },
-        { date: "2026-10-14", close: 99.80 },
-        { date: "2026-10-15", close: 103.10 },
-        { date: "2026-10-16", close: 104.20 }
+        { date: "2026-10-21", close: 221.97 },
+        { date: "2026-10-22", close: 212.21 },
+        { date: "2026-10-23", close: 210.96 },
+        { date: "2026-10-26", close: 216.00 },
+        { date: "2026-10-27", close: 217.94 }
       ],
       latest: null,
-      priceSource: "https://example.com/sample",
+      priceSource: "https://stockanalysis.com/stocks/nvda/history/",
       news: [
-        { date: "2026-10-15", headline: "Sample headline. Run the refresh-brief agent to replace this.", source: "Sample", url: "https://example.com/sample", why: "Sample. The agent writes one plain sentence here on why the item matters to the stock." }
-      ],
-      upcoming: [
-        { date: "2026-10-28", event: "Sample event (replace by refreshing)", source: "Sample", url: "https://example.com/sample" }
-      ]
-    },
-    JPM: {
-      closes: [
-        { date: "2026-10-12", close: 100.00 },
-        { date: "2026-10-13", close: 99.30 },
-        { date: "2026-10-14", close: 98.90 },
-        { date: "2026-10-15", close: 98.20 },
-        { date: "2026-10-16", close: 97.60 }
-      ],
-      latest: null,
-      priceSource: "https://example.com/sample",
-      news: [
-        { date: "2026-10-14", headline: "Sample headline. Run the refresh-brief agent to replace this.", source: "Sample", url: "https://example.com/sample", why: "Sample." }
+        { date: "2026-10-27", headline: "NVIDIA and Oracle Expand NVIDIA Vera Rubin to Multi-Gigawatt Scale and Bring NVIDIA Vera CPU to Oracle Cloud Infrastructure", source: "NVIDIA Newsroom", url: "https://nvidianews.nvidia.com/news/nvidia-and-oracle-expand-nvidia-vera-rubin-to-multi-gigawatt-scale-and-bring-nvidia-vera-cpu-to-oracle-cloud-infrastructure", why: "Oracle scaling up to gigawatt-level capacity on NVIDIA's newest systems points to continued large customer orders." },
+        { date: "2026-10-26", headline: "NVIDIA and Meta to Expand Collaboration on Muse and Muse Family of Models Amid Robust Growth", source: "NVIDIA Newsroom", url: "https://nvidianews.nvidia.com/news/nvidia-and-meta-to-expand-collaboration-on-muse-and-muse-family-of-models-amid-robust-growth", why: "Meta is deploying more NVIDIA infrastructure, and NVIDIA is investing $3 billion in Meta's equity offering." }
       ],
       upcoming: []
     },
-    ACN: {
+    JPM: {
       closes: [
-        { date: "2026-10-12", close: 100.00 },
-        { date: "2026-10-13", close: 100.20 },
-        { date: "2026-10-14", close: 99.90 },
-        { date: "2026-10-15", close: 100.10 },
-        { date: "2026-10-16", close: 100.05 }
+        { date: "2026-10-21", close: 335.19 },
+        { date: "2026-10-22", close: 336.54 },
+        { date: "2026-10-23", close: 331.58 },
+        { date: "2026-10-26", close: 334.04 },
+        { date: "2026-10-27", close: 335.79 }
       ],
       latest: null,
-      priceSource: "https://example.com/sample",
+      priceSource: "https://stockanalysis.com/stocks/jpm/history/",
       news: [],
       upcoming: [
-        { date: "2026-10-22", event: "Sample event (replace by refreshing)", source: "Sample", url: "https://example.com/sample" }
+        { date: "2026-10-28", event: "FOMC meeting concludes (Oct 27-28); rate decision expected this day. Market-wide item.", source: "Federal Reserve", url: "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm" }
       ]
     },
-    DE: {
+    ACN: {
       closes: [
-        { date: "2026-10-12", close: 100.00 },
-        { date: "2026-10-13", close: 102.50 },
-        { date: "2026-10-14", close: 101.80 },
-        { date: "2026-10-15", close: 103.90 },
-        { date: "2026-10-16", close: 102.70 }
+        { date: "2026-10-21", close: 240.26 },
+        { date: "2026-10-22", close: 258.74 },
+        { date: "2026-10-23", close: 249.37 },
+        { date: "2026-10-26", close: 247.23 },
+        { date: "2026-10-27", close: 235.16 }
       ],
       latest: null,
-      priceSource: "https://example.com/sample",
-      news: [
-        { date: "2026-10-13", headline: "Sample headline. Run the refresh-brief agent to replace this.", source: "Sample", url: "https://example.com/sample", why: "Sample." }
+      priceSource: "https://stockanalysis.com/stocks/acn/history/",
+      news: [],
+      upcoming: []
+    },
+    JEF: {
+      closes: [
+        { date: "2026-10-21", close: 45.03 },
+        { date: "2026-10-22", close: 45.64 },
+        { date: "2026-10-23", close: 44.79 },
+        { date: "2026-10-26", close: 45.43 },
+        { date: "2026-10-27", close: 46.19 }
       ],
+      latest: null,
+      priceSource: "https://stockanalysis.com/stocks/jef/history/",
+      news: [],
       upcoming: []
     },
     LLY: {
       closes: [
-        { date: "2026-10-12", close: 100.00 },
-        { date: "2026-10-13", close: 98.70 },
-        { date: "2026-10-14", close: 99.60 },
-        { date: "2026-10-15", close: 101.30 },
-        { date: "2026-10-16", close: 102.90 }
+        { date: "2026-10-21", close: 1270.75 },
+        { date: "2026-10-22", close: 1306.69 },
+        { date: "2026-10-23", close: 1273.46 },
+        { date: "2026-10-26", close: 1279.14 },
+        { date: "2026-10-27", close: 1281.91 }
       ],
       latest: null,
-      priceSource: "https://example.com/sample",
-      news: [
-        { date: "2026-10-16", headline: "Sample headline. Run the refresh-brief agent to replace this.", source: "Sample", url: "https://example.com/sample", why: "Sample." }
-      ],
+      priceSource: "https://stockanalysis.com/stocks/lly/history/",
+      news: [],
       upcoming: [
-        { date: "2026-10-30", event: "Sample event (replace by refreshing)", source: "Sample", url: "https://example.com/sample" }
+        { date: "2026-10-29", event: "Q3 2026 financial results; conference call at 10 a.m. Eastern (confirmed by company)", source: "Lilly (via Finviz)", url: "https://finviz.com/news/403165/lilly-confirms-date-and-conference-call-for-third-quarter-2026-financial-results-announcement" }
       ]
     }
   }
 };
 
 const CHANGELOG = [
+  {
+    date: "2026-10-28",
+    summary: [
+      "NVDA 221.97 to 217.94 (-1.8%) on Oracle and Meta expanding NVIDIA infrastructure deals",
+      "JPM 335.19 to 335.79 (+0.2%), no major news found",
+      "ACN 240.26 to 235.16 (-2.1%), no major news found",
+      "JEF 45.03 to 46.19 (+2.6%), no major news found",
+      "LLY 1270.75 to 1281.91 (+0.9%), no major news found",
+      "Added JEF (replaces DE) and removed the leftover DE entry. Switched from sample to live data.",
+      "Calendar added: FOMC decision (Oct 28), LLY Q3 earnings (Oct 29).",
+      "Missing: no news within the window found for JPM, ACN, JEF, LLY. No confirmed calendar items in the window for NVDA, JPM, ACN, JEF.",
+      "All prices are from stockanalysis.com, a secondary source; not cross-checked."
+    ],
+    note: "Verify: (1) prices against a second source, especially ACN's swing (258.74 on Oct 22 to 235.16 on Oct 27); (2) FOMC decision date comes from the Fed page showing Oct 27-28, the Oct 28 decision is inferred; (3) the LLY earnings date source is Finviz carrying Lilly's release, I could not open Lilly's own site (403). Data was pulled Oct 28 at about 11:45 ET with the market open, so priceType is close and ends Oct 27. Not recorded as news because outside the window or unopened: JPM Q3 results (Oct 13), Jefferies Investor Day (Oct 19), Lilly dividend declared Oct 26 (seen only on stockanalysis.com)."
+  },
   {
     date: "2026-10-16",
     summary: [
